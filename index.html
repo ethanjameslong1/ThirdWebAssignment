@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>Time of Day Assignment</h1>
+
+  <p>
+    <script>
+      const now = new Date();
+      const hours = now.getHours();
+      let img = "";
+
+      if (hours >= 6 && hours < 12) {
+        // Morning
+        img = "https://media.istockphoto.com/id/973357440/photo/coffee-cup-with-croissant-and-orange-juice.jpg?s=612x612&w=0&k=20&c=6hUiCTKLcfHb8RQZf_2HEdSteDtUWHBogCZkIoZx6MI=";
+        document.body.style.backgroundColor = "lightyellow";
+      } else if (hours >= 12 && hours < 18) {
+        // Afternoon
+        img = "https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
+        document.body.style.backgroundColor = "lightblue";
+      } else {
+        // Night
+        img = "https://images.pexels.com/photos/801863/pexels-photo-801863.jpeg";
+        document.body.style.backgroundColor = "darkblue";
+      }
+
+      document.write("<img src='" + img + "' alt='Time of Day Image' width='400'>");
+    </script>
+  </p>
+
+  <p>
+    Ethan Long<br>
+    COP 4813<br>
+    Computer Science<br>
+    Welcome to my dynamic webpage!
+  </p>
+
+</body>
+
+</html>
